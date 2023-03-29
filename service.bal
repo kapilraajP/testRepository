@@ -24,6 +24,6 @@ service / on new http:Listener(9090) {
     # + return - string name with hello message or error
     resource function get greeting() returns string|error {
         // Send a response back to the caller.
-        return "Hello, " + employee;
+        return "Hello, " + employee.toString();
     }
 }
