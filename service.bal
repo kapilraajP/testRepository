@@ -3,12 +3,12 @@ import ballerina/http;
 type Employee record {
     string personNameNamepersonNameNamepersonNameName;
     int age;
-    Person person;
+    Person[] person;
 };
 
 
 type Person record {
-    string[] personName;
+    string personName;
     int age;
 };
 
